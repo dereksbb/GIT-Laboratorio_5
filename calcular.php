@@ -3,8 +3,9 @@ $cantidad = $_POST['cantidad'];
 $subtotal = $cantidad*125;
 $numero_cajas = ceil($cantidad/4);
 $flete = $numero_cajas*50;
-if ($cantidad>1000)
+if ($cantidad>1000){
     $descuento=$subtotal*0.15;
+}  
 else
 {
     if($cantidad>100){
